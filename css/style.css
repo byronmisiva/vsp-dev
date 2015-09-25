@@ -14,13 +14,28 @@ a:hover, a:visited {
     font-weight: bold;
 }
 
-
 .roboto-light {
     font-family: 'Roboto', sans-serif;
 }
 
-.fondo-home
- {
+.logoMisiva {
+    padding: 60px 10px 0 0;
+}
+
+.vespaRoad {
+    padding: 0 0 50px 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.vespaText {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.fondo-home {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -33,25 +48,23 @@ a:hover, a:visited {
     margin: 0;
 }
 
-
 .fondo-home {
     background-image: url("../images/fondo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .container {
-        width: 900px;
+        width: 800px;
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .container {
-        width: 900px;
+        width: 800px;
     }
 }
-
 
 @media (min-width: 768px) {
     .vertical-center {
@@ -69,4 +82,10 @@ a:hover, a:visited {
         display: -webkit-box;
     }
 
+}
+
+@media (max-width: 768px) {
+    .col-sm-12 {
+        width: 100%;
+    }
 }

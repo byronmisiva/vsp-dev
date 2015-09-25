@@ -1,3 +1,11 @@
+<?php
+require_once 'lib/Mobile-Detect-master/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+
+$deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'phone' : 'phone') : 'computer');
+$isiOS =  $detect->isiOS();
+$isAndroidOS =  $detect->isAndroidOS();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,20 +41,23 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 margen-0">
                 <div class="col-md-8 col-sm-8 col-xs-12">
-                    <div class="col-md-12 col-sm-12 col-xs-12 center-block text-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12 center-block vespaRoad ">
                         <img src="images/logo-vespa-road.png"/>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 roboto-light text-center">
-                        <h1>Descarga Vespa Ecuador</h1>
+                    <div class="col-md-12 col-sm-12 col-xs-12 roboto-light  ">
+                        <h3>¿Ya tienes una Vespa?</h3>
                     </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 roboto-light">
+                    <div class="col-md-12 col-sm-12 col-xs-12 roboto-light ">
+                        <h2>¡Vive la experiencia al máximo!</h2>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 roboto-light vespaText">
                         Descarga gratis nuestra aplicación móvil en tu smartphone y únete al estilo de vida #VespaEcuador
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                             <img src="images/icono-google-play.png"/>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
                             <img src="images/icono-ios.png"/>
                         </div>
                     </div>
@@ -55,7 +66,7 @@
                     <img src="images/movile-samsung-vespa.png" />
                 </div>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-right logoMisiva">
                 <img src="images/logo-misiva.png"/>
             </div>
         </div>
