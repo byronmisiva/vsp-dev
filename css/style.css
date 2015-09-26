@@ -88,4 +88,27 @@ h2 {
     .col-sm-12 {
         width: 100%;
     }
+
+    .center-xs {
+        text-align: center;
+    }
+
+    .fondo-home {
+        position: relative;
+    }
+
+    .logoMisiva {
+        padding: 60px 10px 20px 0;
+    }
+
+    .vespaRoad {
+        padding: 20px 0 50px 10px;
+    }
+    
+    .logos {
+        padding: 20px;
+    }
+    .btnObjs {
+        padding: 20px 0;
+    }
 }
